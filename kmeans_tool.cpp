@@ -51,7 +51,7 @@ int main(int argc, char **argv)
     {
         printf("Parameters for %s:\n", argv[0]);
         printf("  -f <file>\n");
-        printf("      input sample array file\n");
+        printf("      input sample file, one vector per line, default delimiter is whitespace\n");
         printf("  -o <file>\n");
         printf("      use <file> to save the clustering index of each sample\n");
         printf("  -c <file>\n");
@@ -59,7 +59,7 @@ int main(int argc, char **argv)
         printf("  -k <int>\n");
         printf("      set the cluster number\n");
         printf("  -d <int>\n");
-        printf("      set the dimension of sample embedding\n");
+        printf("      set the dimension of sample vector\n");
         printf("  -t <int>\n");
         printf("      set the distance type of kmeans, 1=euclidean (default), 2=cosine\n");
         printf("  -init <int>\n");

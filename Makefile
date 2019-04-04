@@ -9,7 +9,7 @@ kmeans_tool.o : kmeans_tool.cpp parallel_kmeans.h
 	$(CC) -g -O2 -std=c++11 -c kmeans_tool.cpp
 
 parallel_kmeans.o : parallel_kmeans.cpp parallel_kmeans.h
-	$(CC) -g -O2 -std=c++11 -mavx -msse4 -c parallel_kmeans.cpp
+	$(CC) -g -O2 -std=c++11 -mavx -msse4 -fopenmp -c parallel_kmeans.cpp
 
 .PHONY : clean
 clean :
