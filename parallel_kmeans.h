@@ -10,6 +10,7 @@
 
 #include <Eigen/Dense>
 #include <cstdint>
+#include <vector>
 
 namespace parallel_kmeans
 {
